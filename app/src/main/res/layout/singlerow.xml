@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:elevation="6dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="@string/name"
+            android:textColor="@color/violet"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/subject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/subject"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/qualification"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+           android:layout_toEndOf="@+id/subject"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/name"
+            android:layout_marginStart="15dp"
+            android:text="@string/qualification"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/dommy_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/qualification"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/dommy_button"
+            app:cornerRadius="8dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:adjustViewBounds="true"
+            android:layout_margin="5dp"
+            android:layout_centerHorizontal="true"
+            app:shapeAppearance="@style/roundImageView"
+            android:background="@color/cream_color"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:id="@+id/imageView"
+            android:layout_toEndOf="@+id/qualification"
+            android:src="@drawable/domy"
+            android:scaleType="fitCenter"
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
